@@ -1,3 +1,5 @@
 public interface IHelloWorld {
-    void SayHello(String name);
+    void sayHello(String name);
+
+    void sayBye();
 }
