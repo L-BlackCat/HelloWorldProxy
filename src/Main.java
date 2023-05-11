@@ -8,8 +8,10 @@ public class Main {
         IHelloWorld proxy = (IHelloWorld) RPCProxyClient.getProxy(service);
         proxy.sayHello("text");
 
-        //  LFH 并不能完成远程计算机（A）调用另一个远程计算机上(B)的某个对象（m），就像调用本地程序中的对象一样，A计算机上需要知道B计算机上的对象结构
+        /*
+        *   LFM 并不能完成远程计算机（A）调用另一个远程计算机上(B)的某个对象（m），就像调用本地程序中的对象一样，A计算机上需要知道B计算机上的对象结构
+        *    *完成这些是透明化远程服务调用吗？  通信双方了解彼此的数据模型
+        * */
 
-        //
     }
 }
